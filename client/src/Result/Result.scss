@@ -1,0 +1,36 @@
+@import '../App.scss';
+.extra-wrapper {
+  margin: 2px;
+  border: 1px solid black;
+  background-color:rgb(247, 239, 230);
+  width: calc(100vw - 6px);
+  height: calc(100vh - 6px);
+  overflow:hidden;
+
+}
+.result-wrapper{
+  height: calc(100vh - 6px - 8rem);
+  margin: 2rem;
+  border: 1px solid rgb(100, 100, 100);
+  padding: 2rem;
+  font-family: 'Glacial Indifference';
+  h1 {
+    font-family: "Yeseva One";
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  img {
+    width: calc(100vw - 8rem - 6px);
+  }
+  ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    li {
+      list-style-type: none;
+      font-size: .8rem;
+    }
+  }
+}
