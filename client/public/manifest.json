@@ -3,59 +3,54 @@
   "name": "Story Sale Generator",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "16x16 32x32",
-      "type": "image/x-icon"
+      "src": "icons/bbv48.jpg",
+      "sizes": "48x48",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv48.jpg",
-      "type": "image/jpeg",
-      "sizes": "48x48"
+      "src": "icons/bbv57.jpg",
+      "sizes": "57x57",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv57.jpg",
-      "type": "image/jpeg",
-      "sizes": "57x57"
+      "src": "icons/bbv72.jpg",
+      "sizes": "72x72",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv72.jpg",
-      "type": "image/jpeg",
-      "sizes": "72x72"
+      "src": "icons/bbv96.jpg",
+      "sizes": "96x96",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv96.jpg",
-      "type": "image/jpeg",
-      "sizes": "96x96"
+      "src": "icons/bbv114.jpg",
+      "sizes": "114x114",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv114.jpg",
-      "type": "image/jpeg",
-      "sizes": "114x114"
+      "src": "icons/bbv144.jpg",
+      "sizes": "144x144",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv144.jpg",
-      "type": "image/jpeg",
-      "sizes": "144x144"
+      "src": "icons/bbv168.jpg",
+      "sizes": "168x168",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv168.jpg",
-      "type": "image/jpeg",
-      "sizes": "168x168"
+      "src": "icons/bbv192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv192.jpg",
-      "type": "image/jpeg",
-      "sizes": "192x192"
+      "src": "icons/bbv256.jpg",
+      "sizes": "256x256",
+      "type": "image/jpeg"
     },
     {
-      "src": "bbv256.jpg",
-      "type": "image/jpeg",
-      "sizes": "256x256"
-    },
-    {
-      "src": "bbv512.jpg",
-      "type": "image/jpeg",
-      "sizes": "512x512"
+      "src": "icons/bbv512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
     }
   ],
   "start_url": ".",
