@@ -13,6 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/bmcglauser/bbv-story-sale.git"
   },
+  "engines": {
+    "node": "12.18.2",
+    "npm": "7.0.14"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
