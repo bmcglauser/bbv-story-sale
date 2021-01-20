@@ -1,20 +1,60 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "BearBone Vintage",
+  "name": "Story Sale Generator",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "16x16 32x32",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "bbv48.jpg",
+      "type": "image/jpeg",
+      "sizes": "48x48"
+    },
+    {
+      "src": "bbv57.jpg",
+      "type": "image/jpeg",
+      "sizes": "57x57"
+    },
+    {
+      "src": "bbv72.jpg",
+      "type": "image/jpeg",
+      "sizes": "72x72"
+    },
+    {
+      "src": "bbv96.jpg",
+      "type": "image/jpeg",
+      "sizes": "96x96"
+    },
+    {
+      "src": "bbv114.jpg",
+      "type": "image/jpeg",
+      "sizes": "114x114"
+    },
+    {
+      "src": "bbv144.jpg",
+      "type": "image/jpeg",
+      "sizes": "144x144"
+    },
+    {
+      "src": "bbv168.jpg",
+      "type": "image/jpeg",
+      "sizes": "168x168"
+    },
+    {
+      "src": "bbv192.jpg",
+      "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "bbv256.jpg",
+      "type": "image/jpeg",
+      "sizes": "256x256"
+    },
+    {
+      "src": "bbv512.jpg",
+      "type": "image/jpeg",
       "sizes": "512x512"
     }
   ],
