@@ -47,7 +47,6 @@ const Result: FunctionComponent<ResultProps> = props => {
               <li className="comments">{data.comments.toUpperCase()}</li>
           </ul>
         </div>
-        <p>{'DM for more photos'.toUpperCase()}</p>
       </div>
     </div>
   )
