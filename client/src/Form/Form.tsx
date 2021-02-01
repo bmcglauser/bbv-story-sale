@@ -96,6 +96,24 @@ const Form: FunctionComponent<FormProps> = (props) => {
           onChange={textHandler}
         />
       </label>
+      <div className="radio-wrapper">
+        <label htmlFor="comments">Light theme
+        <input
+          name="theme"
+          id="theme"
+          value="light"
+          type="radio"
+          onChange={textHandler}
+        /></label>
+        <label htmlFor="comments">Dark theme
+        <input
+          name="theme"
+          id="theme"
+          value="dark"
+          type="radio"
+          onChange={textHandler}
+        /></label>
+      </div>
     </form>
     
   )

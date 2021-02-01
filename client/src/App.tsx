@@ -12,16 +12,18 @@ export interface IData {
   price: number;
   asIs: string;
   comments: string;
+  theme: 'light' | 'dark';
 }
 const dataDefault: IData = {
   title: '',
   photoURL: '',
-  bestFit: 'BEST FIT - ',
-  measurementA: 'CHEST - ',
+  bestFit: 'Best Fit - ',
+  measurementA: 'Chest - ',
   measurementB: '',
   price: 0,
-  asIs: 'AS-IS - ',
-  comments: ''
+  asIs: 'As-is - ',
+  comments: '',
+  theme: 'light'
 };
 
 function App() {
@@ -30,13 +32,9 @@ function App() {
 
   function textHandler(e: ChangeEvent<HTMLInputElement>) {
     setData((data: IData) => {
-      const entry =
-        e.target.name === 'title'
-          ? e.target.value
-          : e.target.value.toUpperCase();
       return {
         ...data,
-        [e.target.name]: entry
+        [e.target.name]: e.target.value
       };
     });
   }
