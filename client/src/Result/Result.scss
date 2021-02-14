@@ -62,7 +62,9 @@
   // Amiko
   color: rgb(236, 231, 223);
   background-color:  rgb(70, 70, 70);
-
+    * {
+      text-align: center;
+    }
     .result-wrapper {
       margin: 1rem;
       // border: 1px solid rgb(100, 100, 100);
