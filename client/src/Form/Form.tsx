@@ -1,17 +1,18 @@
-import React, { ChangeEvent, FunctionComponent } from 'react';
-import { IData } from '../App';
+import React, { ChangeEvent, FunctionComponent, useContext } from 'react';
+import { FormDataContext, IData } from '../utils/FormDataContext';
+
 
 import './Form.scss';
 
 interface FormProps {
-  data: IData;
   textHandler: (e: ChangeEvent<HTMLInputElement>) => void;
   fileHandler: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Form: FunctionComponent<FormProps> = (props) => {
-  const {data, textHandler, fileHandler} = props;
-  
+  const { textHandler, fileHandler } = props;
+  const data = useContext(FormDataContext);
+
   return (
     <form className="main-form">
       <label htmlFor="title">
@@ -97,26 +98,29 @@ const Form: FunctionComponent<FormProps> = (props) => {
         />
       </label>
       <div className="radio-wrapper">
-        <label htmlFor="comments">Light theme
-        <input
-          name="theme"
-          id="theme"
-          value="light"
-          type="radio"
-          onChange={textHandler}
-        /></label>
-        <label htmlFor="comments">Dark theme
-        <input
-          name="theme"
-          id="theme"
-          value="dark"
-          type="radio"
-          onChange={textHandler}
-        /></label>
+        <label htmlFor="comments">
+          Light theme
+          <input
+            name="theme"
+            id="theme"
+            value="light"
+            type="radio"
+            onChange={textHandler}
+          />
+        </label>
+        <label htmlFor="comments">
+          Dark theme
+          <input
+            name="theme"
+            id="theme"
+            value="dark"
+            type="radio"
+            onChange={textHandler}
+          />
+        </label>
       </div>
     </form>
-    
-  )
-}
+  );
+};
 
 export default Form;

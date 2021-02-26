@@ -17,9 +17,13 @@
     height: 2rem;
   }
 
-  .preview-button {
+  .preview-button, .clear-button {
     width: 50%;
-    margin-left: 25%;
+    margin: 1rem 25% 0;
     height: 2rem;
+    
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 }

@@ -1,30 +1,9 @@
 import React, { useState, ChangeEvent, MouseEvent } from 'react';
 import './App.scss';
 import Result from './Result';
-import Form from './Form'
+import Form from './Form';
 
-export interface IData {
-  title: string;
-  photoURL: string;
-  bestFit: string;
-  measurementA: string;
-  measurementB: string;
-  price: number;
-  asIs: string;
-  comments: string;
-  theme: 'light' | 'dark';
-}
-const dataDefault: IData = {
-  title: '',
-  photoURL: '',
-  bestFit: 'Best Fit - ',
-  measurementA: 'Chest - ',
-  measurementB: '',
-  price: 0,
-  asIs: 'As-is - ',
-  comments: '',
-  theme: 'light'
-};
+import { IData, dataDefault, FormDataContext } from './utils/FormDataContext';
 
 function App() {
   const [data, setData] = useState(dataDefault);
@@ -39,9 +18,13 @@ function App() {
     });
   }
 
-  function togglePicture (e: MouseEvent<HTMLButtonElement>) {
+  function togglePicture(e: MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
-    setPictureView(p => !p);
+    setPictureView((p) => !p);
+  }
+  function resetForm(e: MouseEvent<HTMLButtonElement>) {
+    e.preventDefault();
+    setData(dataDefault);
   }
 
   function fileHandler(e: ChangeEvent<HTMLInputElement>) {
@@ -61,14 +44,28 @@ function App() {
     }
   }
 
-
-
   return (
     <div className="app-wrapper">
-      {pictureView ? <Result data={data} /> : <Form data={data} fileHandler={fileHandler} textHandler={textHandler} />}
-      {pictureView
-        ? <button className="back-button" onClick={togglePicture}>BACK TO FORM</button>
-        : <button className="preview-button" onClick={togglePicture}>PREVIEW</button>}
+      <FormDataContext.Provider value={data}>
+        {pictureView ? (
+          <>
+            <Result />
+            <button className="back-button" onClick={togglePicture}>
+              BACK TO FORM
+            </button>
+          </>
+        ) : (
+          <>
+            <Form fileHandler={fileHandler} textHandler={textHandler} />
+            <button className="preview-button" onClick={togglePicture}>
+              PREVIEW
+            </button>
+            <button className="clear-button" onClick={resetForm}>
+              CLEAR
+            </button>
+          </>
+        )}
+      </FormDataContext.Provider>
     </div>
   );
 }
