@@ -16,16 +16,18 @@ const Result: FunctionComponent<ResultProps> = props => {
         <img src={data.photoURL} alt="clothing"/>
         <div className="bottom-block">
           <h1>{data.title}</h1>
+          <p className="price">${data.price}</p>
           <ul>
-            <span className="upper-line">
+            <span className="top line">
+              <li className="bestFit">{data.bestFit}</li>
               <li className="measurement">{data.measurementA}</li>
               <li className="measurement">{data.measurementB}</li>
-              <li className="bestFit">{data.bestFit}</li>
-            </span> <br />
-            <span className="lower-line">
-              <li className="price">${data.price}</li>
-              <li className="asIs">{data.asIs}</li>
+            </span>
+            <span className="middle line">
               <li className="comments">{data.comments}</li>
+            </span>
+            <span className="bottom line">
+              <li className="asIs">{data.asIs}</li>
             </span>
           </ul>
         </div>
@@ -35,16 +37,18 @@ const Result: FunctionComponent<ResultProps> = props => {
   ) : (
     <div className={"extra-wrapper dark"}>
       <div className="result-wrapper">
-        <h1>{data.title.toUpperCase()}</h1>
-        <img src={data.photoURL} alt="clothing"/>
+        <div className="picture-block">
+          <h1>{data.title.toUpperCase()}</h1>
+          <img src={data.photoURL} alt="clothing"/>
+        </div>
         <div className="bottom-block">
           <ul>
+              <li className="bestFit">{data.bestFit.toUpperCase()}</li>
               <li className="measurement">{data.measurementA.toUpperCase()}</li>
               <li className="measurement">{data.measurementB.toUpperCase()}</li>
-              <li className="bestFit">{data.bestFit.toUpperCase()}</li>
               <li className="price">${data.price}</li>
-              <li className="asIs">{data.asIs.toUpperCase()}</li>
               <li className="comments">{data.comments.toUpperCase()}</li>
+              <li className="asIs">{data.asIs.toUpperCase()}</li>
           </ul>
         </div>
       </div>

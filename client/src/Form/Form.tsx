@@ -74,17 +74,6 @@ const Form: FunctionComponent<FormProps> = (props) => {
           onChange={textHandler}
         />
       </label>
-      <label htmlFor="asIs">
-        As is?
-        <br />
-        <input
-          name="asIs"
-          id="asIs"
-          value={data.asIs}
-          type="text"
-          onChange={textHandler}
-        />
-      </label>
       <label htmlFor="comments">
         Further comments?
         <br />
@@ -92,6 +81,17 @@ const Form: FunctionComponent<FormProps> = (props) => {
           name="comments"
           id="comments"
           value={data.comments}
+          type="text"
+          onChange={textHandler}
+        />
+      </label>
+      <label htmlFor="asIs">
+        As is?
+        <br />
+        <input
+          name="asIs"
+          id="asIs"
+          value={data.asIs}
           type="text"
           onChange={textHandler}
         />
