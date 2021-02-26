@@ -31,7 +31,7 @@ const Result: FunctionComponent<ResultProps> = props => {
             </span>
           </ul>
         </div>
-        <p>DM for more photos</p>
+        <p className="dm">DM for more photos</p>
       </div>
     </div>
   ) : (
